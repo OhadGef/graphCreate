@@ -1,12 +1,12 @@
 FROM node:alpine
 
-WORKDIR /app
+WORKDIR opt/app
 
-COPY . /app
+COPY . opt/app
 
 RUN npm install
 
-COPY . /app
+COPY . opt/app
 
 CMD node createGraph.js
 

@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const nodes = process.env.NODES
+const nodes = process.env.NODES;
 console.log(process.env.NODES);
 // const DEMO_CONFIG = {
 //     numOfNodes: 2000000,
