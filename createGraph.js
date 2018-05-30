@@ -1,10 +1,8 @@
 const fs = require('fs');
 
 const nodes = process.env.NODES;
+
 console.log(process.env.NODES);
-// const DEMO_CONFIG = {
-//     numOfNodes: 2000000,
-// };
 
 let tmp =[];
 function getRandomScaleFreeGraphData(requiredNumOfNodes) {
@@ -30,7 +28,7 @@ getRandomScaleFreeGraphData(nodes);
 // console.log(tmp);
 console.log("end...");
 
-fs.writeFile(`./${nodes}.json`, JSON.stringify(tmp), 'utf8',(err) =>{
+fs.writeFile(`./data/${nodes}.json`, JSON.stringify(tmp), 'utf8',(err) =>{
     if (err) throw err;
     console.log('complete');
 });
