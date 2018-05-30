@@ -6,7 +6,7 @@ COPY . /app
 
 RUN npm install
 
-RUN mkdir -p /data
+RUN mkdir -p ./data
 
 COPY . /app
 
